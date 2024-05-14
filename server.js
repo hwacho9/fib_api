@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 
-const fibonacci = require("./fibonacci");
+const fibonacci = require("./fibonacchi");
 const PORT = process.env.PORT || 3000;
 
 app.get('/fib', (req, res) => {
@@ -14,4 +14,8 @@ app.get('/fib', (req, res) => {
 
     const result = fibonacci(n);
     res.json({ result });
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
