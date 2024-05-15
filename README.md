@@ -24,6 +24,8 @@
 
 Type `npm install` into your console to install all necessary dependencies for this project.
 
+create `.env` file then input PORT number
+
 ## ユニットテスト
 
 ```
