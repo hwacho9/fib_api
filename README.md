@@ -1,5 +1,10 @@
 # fib_api
 
+フィボナッチ数を返す API
+
+`フィボナッチ数`とは？
+最初の二項が 1 で、第三項以降の項がすべて直前の二項の和になっている数列です。例として次のように 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89…のような数列となります。
+
 ## modules
 
 -   express
@@ -16,9 +21,17 @@
 
 Type `npm install` into your console to install all necessary dependencies for this project.
 
-## API TEST
+## ユニットテスト
 
-`curl -X GET "http://15.168.8.48:8080/fib?n="`
+```
+npx jest
+```
+
+## API 実行コマンド
+
+```
+curl -X GET "https://sunghwa.site/fib?n=11"
+```
 
 ## Directories
 
